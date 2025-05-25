@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Settings, RefreshCw, ArrowUp, Loader2, Lab } from "lucide-react";
+import { Settings, RefreshCw, ArrowUp, Loader2, Baby as Lab } from "lucide-react";
 import { SettingsPanel } from "./settings-panel";
 import { MemoriesPanel } from "./memories-panel";
 import {
