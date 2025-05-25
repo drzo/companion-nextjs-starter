@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Settings, RefreshCw, ArrowUp, Loader2 } from "lucide-react";
+import { Settings, RefreshCw, ArrowUp, Loader2, Lab } from "lucide-react";
 import { SettingsPanel } from "./settings-panel";
 import { MemoriesPanel } from "./memories-panel";
 import {
@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/tooltip";
 import { TypingAnimation } from "@/components/ui/TypingAnimation";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Dialog,
   DialogContent,
@@ -378,11 +379,20 @@ export default function ChatbotUI() {
                 <h1 className="text-xl font-semibold">{settings.aiName}</h1>
               </div>
               <div className="flex space-x-2">
+                <Link href="/playground">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="hover:bg-gray-800 hover:text-white border border-gray-700"
+                  >
+                    <Lab className="w-5 h-5" />
+                  </Button>
+                </Link>
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={toggleSettings}
-                  className=" hover:bg-gray-800 hover:text-white border border-gray-700"
+                  className="hover:bg-gray-800 hover:text-white border border-gray-700"
                 >
                   <Settings className="w-5 h-5" />
                 </Button>
