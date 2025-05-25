@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Home, MessageSquare, Settings, Lab } from "lucide-react";
+import { Home, MessageSquare, Settings, Baby as Lab } from "lucide-react";
 
 export function PlaygroundNavbar() {
   return (
